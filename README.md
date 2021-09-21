@@ -1,6 +1,7 @@
 # Conversor PDF/A
 
 ## Sobre
+Ferramenta modificada para atender necessidades de projeto. A versão principal encontra-se em https://github.com/culturagovbr/PDFA-Converter.
 
 Ferramenta desenvolvida com o intuito de fornecer uma interface simples para a conversão de arquivos no formato PDF, para o formato PDF/A, um derivado da especificação proprietária, em conformidade com a [ISO 19005:2005](https://www.iso.org/standard/38920.html) e [ISO 32000:2008](https://www.iso.org/standard/51502.html), além de realizar o reconhecimento ótico de caracteres, também conhecido como [OCR](https://pt.wikipedia.org/wiki/Reconhecimento_%C3%B3tico_de_caracteres).
 
@@ -13,6 +14,11 @@ Se você não possui instalado o gulp, rode `npm rm --global gulp` antes de pros
 ```sh
 npm install --global gulp-cli
 ```
+
+### Bibliotecas necessárias
+1. OCRmyPDF
+2. PyMuPDF
+3. python-tkinter
 
 ### Dependências
 
@@ -39,7 +45,3 @@ Para resolver esse problema, execute o seguinte comando:
 ```sh
 chown -R www-data:www-data folder
 ```
-
-## TODO
-
-Corrigir o script que faz a remoção automática dos arquivos - só funciona a primeira vez (depois é necessário recarregar a pagina).
