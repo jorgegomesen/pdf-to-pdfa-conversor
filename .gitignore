@@ -1,0 +1,20 @@
+.htaccess
+*~
+*swp
+.DS*Store
+Thumbs.db
+.buildpath
+.settings
+
+# Sublime Text project files
+*.sublime-project
+*.sublime-workspace
+scripts/update-wp.conf
+node_modules
+
+#PHPStorm
+.idea
+
+inc/uploads/*.pdf
+#inc/uploads/!.gitkeep
+get-pip.py
