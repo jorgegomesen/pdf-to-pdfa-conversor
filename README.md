@@ -19,6 +19,17 @@ npm install --global gulp-cli
 1. OCRmyPDF
 2. PyMuPDF
 3. python-tkinter
+4. leptonica-devel.x86_64
+5. jbig2
+
+### Para instalar o JBIG2 no linux
+```
+git clone https://github.com/agl/jbig2enc 
+cd jbig2enc
+./autogen.sh
+./configure && make
+sudo make install
+```
 
 ### Dependências
 
