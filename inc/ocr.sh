@@ -18,7 +18,10 @@ echo 'Name: ' "$DIR"/$DIR-ocr.pdf
 echo 'Add OCR and converting to PDF-A'
 
 ocrmypdf \
-    --pdf-renderer hocr \
+    --pdf-renderer sandwich \
+    --jbig2-lossy \
+    --optimize 3 \
+    --pdfa-image-compression lossless \
     --force-ocr \
     --output-type pdfa \
     -l por \

@@ -41,6 +41,8 @@
         converterPDF: async function (evt) {
             evt.preventDefault();
 
+            $('.collapsible').empty();
+
             let files = $('#pdf-file').prop('files');
             let files_len = files.length;
             let count = 1;
@@ -48,7 +50,8 @@
             if (!files_len)
                 return;
 
-            $('#convertions-summary').toggleClass("hide");
+            if ($('#convertions-summary').hasClass('hide'))
+                $('#convertions-summary').toggleClass("hide");
 
             for (let file_data of files) {
                 const file_name = file_data.name.toLowerCase()
@@ -82,7 +85,6 @@
                                 <i class="material-icons">file_download</i>
                             </a>
                             </div>
-                            <!--<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>-->
                         </li>
                         `;
 
